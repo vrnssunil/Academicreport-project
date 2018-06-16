@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ACADEMICREPORT</title>
+  </head>
+  <h1>STUDENTMARKS DETAILS</h1>
+  <body>
+    {% for  StudentMarks in students  %}
+   <h1>{{ StudentMarks.studentname }} - {{ StudentMarks.subject }} - {{  StudentMarks.marks}}</h1>
+    {% endfor %}
+<h1> FACULTY DETAILS <h1>
+    {% for  SubjectFaculty in faculties  %}
+   <h1>{{ SubjectFaculty.subject }} - {{ SubjectFaculty.name }}</h1>
+    {% endfor %}
+    <div>
+    {% for x in total %}
+    <h1>{{ x.studentname }}-{{ x.total }}</h1>
+    {% endfor %}
+    </div>
+    <div>
+    {% for x in average %}
+    <h1>{{ x.subject}}-{{ x.total}}_{{x.name}}</h1>
+    {% endfor %}
+    </div>
+  </body>
+</html>
