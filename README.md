@@ -32,8 +32,8 @@ These instructions will get you a copy of the project up and running on your loc
      ** ** cmd:select * from table tablename;# To see data in tables
   
    #### To create tables in database:
-     ** **  cmd :python manage.py mkaemigrations
-     ** **  cmd:python manage.py migrtae
+     ** **  cmd :python manage.py makemigrations
+     ** **  cmd:python manage.py migrate
  
  #### To push the data into database:
      ** **  cmd:python pythonfilename.py(python db.py)
